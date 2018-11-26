@@ -1,7 +1,7 @@
 /* Generated file, do not edit! */
 
-/* Version determined from build date/time */
+/* Version determined from Git */
 
 #ifndef s7plcVERSION
-  #define s7plcVERSION "2018-11-25T20:37:36+0800"
+  #define s7plcVERSION "ab8fa94dcbd40917bc1c-dirty"
 #endif

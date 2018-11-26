@@ -116,25 +116,24 @@ epicsShareExtern dset *pvar_dset_devAaiSoft, *pvar_dset_devAaoSoft,
     *pvar_dset_devLiGeneralTime, *pvar_dset_s7plcLongin,
     *pvar_dset_devLoSoft, *pvar_dset_devLoSoftCallback,
     *pvar_dset_s7plcLongout, *pvar_dset_devLsiSoft,
-    *pvar_dset_devLsiEnviron, *pvar_dset_devs7plcVersion,
-    *pvar_dset_devLsoSoft, *pvar_dset_devLsoSoftCallback,
-    *pvar_dset_devLsoStdio, *pvar_dset_devMbbiSoft,
-    *pvar_dset_devMbbiSoftRaw, *pvar_dset_devMbbiSoftCallback,
-    *pvar_dset_s7plcMbbi, *pvar_dset_devMbbiDirectSoft,
-    *pvar_dset_devMbbiDirectSoftRaw, *pvar_dset_devMbbiDirectSoftCallback,
-    *pvar_dset_s7plcMbbiDirect, *pvar_dset_devMbboSoft,
-    *pvar_dset_devMbboSoftRaw, *pvar_dset_devMbboSoftCallback,
-    *pvar_dset_s7plcMbbo, *pvar_dset_devMbboDirectSoft,
-    *pvar_dset_devMbboDirectSoftRaw, *pvar_dset_devMbboDirectSoftCallback,
-    *pvar_dset_s7plcMbboDirect, *pvar_dset_devPrintfSoft,
-    *pvar_dset_devPrintfSoftCallback, *pvar_dset_devPrintfStdio,
-    *pvar_dset_devSiSoft, *pvar_dset_devSiSoftCallback,
-    *pvar_dset_devTimestampSI, *pvar_dset_devSiGeneralTime,
-    *pvar_dset_devSiEnviron, *pvar_dset_s7plcStringin,
-    *pvar_dset_devSoSoft, *pvar_dset_devSoSoftCallback,
-    *pvar_dset_devSoStdio, *pvar_dset_s7plcStringout,
-    *pvar_dset_devSASoft, *pvar_dset_devWfSoft, *pvar_dset_s7plcWaveform,
-    *pvar_dset_devXxxSoft;
+    *pvar_dset_devLsiEnviron, *pvar_dset_devLsoSoft,
+    *pvar_dset_devLsoSoftCallback, *pvar_dset_devLsoStdio,
+    *pvar_dset_devMbbiSoft, *pvar_dset_devMbbiSoftRaw,
+    *pvar_dset_devMbbiSoftCallback, *pvar_dset_s7plcMbbi,
+    *pvar_dset_devMbbiDirectSoft, *pvar_dset_devMbbiDirectSoftRaw,
+    *pvar_dset_devMbbiDirectSoftCallback, *pvar_dset_s7plcMbbiDirect,
+    *pvar_dset_devMbboSoft, *pvar_dset_devMbboSoftRaw,
+    *pvar_dset_devMbboSoftCallback, *pvar_dset_s7plcMbbo,
+    *pvar_dset_devMbboDirectSoft, *pvar_dset_devMbboDirectSoftRaw,
+    *pvar_dset_devMbboDirectSoftCallback, *pvar_dset_s7plcMbboDirect,
+    *pvar_dset_devPrintfSoft, *pvar_dset_devPrintfSoftCallback,
+    *pvar_dset_devPrintfStdio, *pvar_dset_devSiSoft,
+    *pvar_dset_devSiSoftCallback, *pvar_dset_devTimestampSI,
+    *pvar_dset_devSiGeneralTime, *pvar_dset_devSiEnviron,
+    *pvar_dset_s7plcStringin, *pvar_dset_devSoSoft,
+    *pvar_dset_devSoSoftCallback, *pvar_dset_devSoStdio,
+    *pvar_dset_s7plcStringout, *pvar_dset_devSASoft, *pvar_dset_devWfSoft,
+    *pvar_dset_s7plcWaveform, *pvar_dset_devXxxSoft;
 
 static const char * const deviceSupportNames[] = {
     "devAaiSoft", "devAaoSoft", "devAiSoft", "devAiSoftRaw",
@@ -148,18 +147,18 @@ static const char * const deviceSupportNames[] = {
     "devI64inSoftCallback", "devI64outSoft", "devI64outSoftCallback",
     "devLiSoft", "devLiSoftCallback", "devLiGeneralTime", "s7plcLongin",
     "devLoSoft", "devLoSoftCallback", "s7plcLongout", "devLsiSoft",
-    "devLsiEnviron", "devs7plcVersion", "devLsoSoft",
-    "devLsoSoftCallback", "devLsoStdio", "devMbbiSoft", "devMbbiSoftRaw",
-    "devMbbiSoftCallback", "s7plcMbbi", "devMbbiDirectSoft",
-    "devMbbiDirectSoftRaw", "devMbbiDirectSoftCallback",
-    "s7plcMbbiDirect", "devMbboSoft", "devMbboSoftRaw",
-    "devMbboSoftCallback", "s7plcMbbo", "devMbboDirectSoft",
-    "devMbboDirectSoftRaw", "devMbboDirectSoftCallback",
-    "s7plcMbboDirect", "devPrintfSoft", "devPrintfSoftCallback",
-    "devPrintfStdio", "devSiSoft", "devSiSoftCallback", "devTimestampSI",
-    "devSiGeneralTime", "devSiEnviron", "s7plcStringin", "devSoSoft",
-    "devSoSoftCallback", "devSoStdio", "s7plcStringout", "devSASoft",
-    "devWfSoft", "s7plcWaveform", "devXxxSoft"
+    "devLsiEnviron", "devLsoSoft", "devLsoSoftCallback", "devLsoStdio",
+    "devMbbiSoft", "devMbbiSoftRaw", "devMbbiSoftCallback", "s7plcMbbi",
+    "devMbbiDirectSoft", "devMbbiDirectSoftRaw",
+    "devMbbiDirectSoftCallback", "s7plcMbbiDirect", "devMbboSoft",
+    "devMbboSoftRaw", "devMbboSoftCallback", "s7plcMbbo",
+    "devMbboDirectSoft", "devMbboDirectSoftRaw",
+    "devMbboDirectSoftCallback", "s7plcMbboDirect", "devPrintfSoft",
+    "devPrintfSoftCallback", "devPrintfStdio", "devSiSoft",
+    "devSiSoftCallback", "devTimestampSI", "devSiGeneralTime",
+    "devSiEnviron", "s7plcStringin", "devSoSoft", "devSoSoftCallback",
+    "devSoStdio", "s7plcStringout", "devSASoft", "devWfSoft",
+    "s7plcWaveform", "devXxxSoft"
 };
 
 static const dset * const devsl[] = {
@@ -181,21 +180,20 @@ static const dset * const devsl[] = {
     pvar_dset_devLiGeneralTime, pvar_dset_s7plcLongin,
     pvar_dset_devLoSoft, pvar_dset_devLoSoftCallback,
     pvar_dset_s7plcLongout, pvar_dset_devLsiSoft, pvar_dset_devLsiEnviron,
-    pvar_dset_devs7plcVersion, pvar_dset_devLsoSoft,
-    pvar_dset_devLsoSoftCallback, pvar_dset_devLsoStdio,
-    pvar_dset_devMbbiSoft, pvar_dset_devMbbiSoftRaw,
-    pvar_dset_devMbbiSoftCallback, pvar_dset_s7plcMbbi,
-    pvar_dset_devMbbiDirectSoft, pvar_dset_devMbbiDirectSoftRaw,
-    pvar_dset_devMbbiDirectSoftCallback, pvar_dset_s7plcMbbiDirect,
-    pvar_dset_devMbboSoft, pvar_dset_devMbboSoftRaw,
-    pvar_dset_devMbboSoftCallback, pvar_dset_s7plcMbbo,
-    pvar_dset_devMbboDirectSoft, pvar_dset_devMbboDirectSoftRaw,
-    pvar_dset_devMbboDirectSoftCallback, pvar_dset_s7plcMbboDirect,
-    pvar_dset_devPrintfSoft, pvar_dset_devPrintfSoftCallback,
-    pvar_dset_devPrintfStdio, pvar_dset_devSiSoft,
-    pvar_dset_devSiSoftCallback, pvar_dset_devTimestampSI,
-    pvar_dset_devSiGeneralTime, pvar_dset_devSiEnviron,
-    pvar_dset_s7plcStringin, pvar_dset_devSoSoft,
+    pvar_dset_devLsoSoft, pvar_dset_devLsoSoftCallback,
+    pvar_dset_devLsoStdio, pvar_dset_devMbbiSoft,
+    pvar_dset_devMbbiSoftRaw, pvar_dset_devMbbiSoftCallback,
+    pvar_dset_s7plcMbbi, pvar_dset_devMbbiDirectSoft,
+    pvar_dset_devMbbiDirectSoftRaw, pvar_dset_devMbbiDirectSoftCallback,
+    pvar_dset_s7plcMbbiDirect, pvar_dset_devMbboSoft,
+    pvar_dset_devMbboSoftRaw, pvar_dset_devMbboSoftCallback,
+    pvar_dset_s7plcMbbo, pvar_dset_devMbboDirectSoft,
+    pvar_dset_devMbboDirectSoftRaw, pvar_dset_devMbboDirectSoftCallback,
+    pvar_dset_s7plcMbboDirect, pvar_dset_devPrintfSoft,
+    pvar_dset_devPrintfSoftCallback, pvar_dset_devPrintfStdio,
+    pvar_dset_devSiSoft, pvar_dset_devSiSoftCallback,
+    pvar_dset_devTimestampSI, pvar_dset_devSiGeneralTime,
+    pvar_dset_devSiEnviron, pvar_dset_s7plcStringin, pvar_dset_devSoSoft,
     pvar_dset_devSoSoftCallback, pvar_dset_devSoStdio,
     pvar_dset_s7plcStringout, pvar_dset_devSASoft, pvar_dset_devWfSoft,
     pvar_dset_s7plcWaveform, pvar_dset_devXxxSoft
@@ -217,13 +215,8 @@ static struct jlif *jlifsl[] = {
 
 typedef void (*reg_func)(void);
 epicsShareExtern reg_func pvar_func_arrInitialize, pvar_func_asSub,
-    pvar_func_dbndInitialize, pvar_func_helloRegister,
-    pvar_func_initTraceRegister, pvar_func_s7plcRegister,
-    pvar_func_syncInitialize, pvar_func_tsInitialize,
-    pvar_func_register_func_myAsubInit,
-    pvar_func_register_func_myAsubProcess,
-    pvar_func_register_func_mySubInit,
-    pvar_func_register_func_mySubProcess;
+    pvar_func_dbndInitialize, pvar_func_s7plcRegister,
+    pvar_func_syncInitialize, pvar_func_tsInitialize;
 
 epicsShareExtern int * const pvar_int_asCaDebug;
 epicsShareExtern int * const pvar_int_atExitDebug;
@@ -240,7 +233,6 @@ epicsShareExtern int * const pvar_int_dbRecordsOnceOnly;
 epicsShareExtern int * const pvar_int_dbTemplateMaxVars;
 epicsShareExtern int * const pvar_int_dbThreadRealtimeLock;
 epicsShareExtern int * const pvar_int_histogramSDELprecision;
-epicsShareExtern int * const pvar_int_mySubDebug;
 epicsShareExtern int * const pvar_int_s7plcDebug;
 epicsShareExtern double * const pvar_double_seqDLYlimit;
 epicsShareExtern int * const pvar_int_seqDLYprecision;
@@ -261,7 +253,6 @@ static struct iocshVarDef vardefs[] = {
     {"dbTemplateMaxVars", iocshArgInt, pvar_int_dbTemplateMaxVars},
     {"dbThreadRealtimeLock", iocshArgInt, pvar_int_dbThreadRealtimeLock},
     {"histogramSDELprecision", iocshArgInt, pvar_int_histogramSDELprecision},
-    {"mySubDebug", iocshArgInt, pvar_int_mySubDebug},
     {"s7plcDebug", iocshArgInt, pvar_int_s7plcDebug},
     {"seqDLYlimit", iocshArgDouble, pvar_double_seqDLYlimit},
     {"seqDLYprecision", iocshArgInt, pvar_int_seqDLYprecision},
@@ -297,15 +288,9 @@ int s7plc_registerRecordDeviceDriver(DBBASE *pbase)
     pvar_func_arrInitialize();
     pvar_func_asSub();
     pvar_func_dbndInitialize();
-    pvar_func_helloRegister();
-    pvar_func_initTraceRegister();
     pvar_func_s7plcRegister();
     pvar_func_syncInitialize();
     pvar_func_tsInitialize();
-    pvar_func_register_func_myAsubInit();
-    pvar_func_register_func_myAsubProcess();
-    pvar_func_register_func_mySubInit();
-    pvar_func_register_func_mySubProcess();
     iocshRegisterVariable(vardefs);
     return 0;
 }
